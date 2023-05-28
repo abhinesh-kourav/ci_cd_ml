@@ -1,0 +1,72 @@
+
+    <html>
+    <head>
+        <title>Rock Classification Prediction</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <h2>Crack Initiation (CI) and Crack Damage (CD) Prediction</h2>
+            <form method="post" action="predict" class="mt-4">
+                <div class="form-group">
+                    <label for="rock_classification">Rock Classification:</label>
+                    <select class="form-control" id="rock_classification" name="rock_classification">
+                        <option value="Igneous">Igneous</option>
+                        <option value="Metamorphic">Metamorphic</option>
+                        <option value="Sedimentary">Sedimentary</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="mean_grain_size">Mean Grain Size (mm):</label>
+                    <input type="text" class="form-control" id="mean_grain_size" name="mean_grain_size" required>
+                </div>
+                <div class="form-group">
+                    <label for="plagioclase_feldspar">Plagioclase Feldspar (%):</label>
+                    <input type="text" class="form-control" id="plagioclase_feldspar" name="plagioclase_feldspar" required>
+                </div>
+                <div class="form-group">
+                    <label for="alkali_feldspar">Alkali Feldspar (%):</label>
+                    <input type="text" class="form-control" id="alkali_feldspar" name="alkali_feldspar" required>
+                </div>
+                <div class="form-group">
+                    <label for="quartz">Quartz (%):</label>
+                    <input type="text" class="form-control" id="quartz" name="quartz" required>
+                </div>
+                <div class="form-group">
+                    <label for="calcite">Calcite (%):</label>
+                    <input type="text" class="form-control" id="calcite" name="calcite" required>
+                </div>
+                <div class="form-group">
+                    <label for="clay">Clay (%):</label>
+                    <input type="text" class="form-control" id="clay" name="clay" required>
+                </div>
+                <div class="form-group">
+                    <label for="mica">Mica (%):</label>
+                    <input type="text" class="form-control" id="mica" name="mica" required>
+                </div>
+                <div class="form-group">
+                    <label for="amphibole">Amphibole (%):</label>
+                    <input type="text" class="form-control" id="amphibole" name="amphibole" required>
+                </div>
+                <div class="form-group">
+                    <label for="density">Density (g/cm<sup>3</sup>):</label>
+                    <input type="text" class="form-control" id="density" name="density" required>
+                </div>
+                <div class="form-group">
+                    <label for="porosity">Porosity (%):</label>
+                    <input type="text" class="form-control" id="porosity" name="porosity" required>
+                </div>
+                <div class="form-group">
+                    <label for="e">Elastic Modulus (GPa):</label>
+                    <input type="text" class="form-control" id="e" name="e" required>
+                </div>
+                <div class="form-group">
+                    <label for="v">Poisson's ratio:</label>
+                    <input type="text" class="form-control" id="v" name="v" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Predict</button>
+            </form>
+        </div>
+    </body>
+    </html>
+    
